@@ -1,0 +1,10 @@
+<div class="card puntero">
+    <div class="card-body">
+        <h5 class="card-title">{{pais.name}}</h5>
+        <div class="card-text">
+            <b>{{pais.capital}}</b>
+            <p *ngIf="!loading">Temp:{{temp}} </p>
+            <p *ngIf="loading">Tem:Cargando . . . </p>
+        </div>
+    </div>
+</div>

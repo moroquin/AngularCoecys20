@@ -1,0 +1,18 @@
+<div class="row m-2">
+    <div class="col">
+        <input #region name="region" type="text" class="form-control" (keyup.enter)="buscarCiudades(region.value)" placeholder="Ingrese el nombre de la región">
+    </div>
+
+    <ul>
+        <li *ngFor="let region of regiones">{{region}}</li>
+    </ul>
+</div>
+
+
+<div class="row m-5">
+    <div class="card-columns m-5 ">
+        <app-pais [pais]='pais' *ngFor="let pais of paises"></app-pais>
+    </div>
+
+
+</div>
